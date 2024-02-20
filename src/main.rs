@@ -5,12 +5,12 @@ use crate::remove_unpaired_raws::remove_unpaired_raws;
 mod remove_unpaired_raws;
 
 fn main() {
-    let matches = Command::new("kikefdezl_photo_utils")
+    let matches = Command::new("photo_utils")
         .version("0.1")
         .author("Kike Fernández-Laguilhoat Sánchez-Biezma")
-        .about("Utilities for photographies")
+        .about("Utilities for Photographies")
         .subcommand(
-            Command::new("remove-raws")
+            Command::new("remove-unpaired-raws")
                 .about("Remove RAW/RAF files from a folder if there is no mirror JPG/JPEG")
                 .arg(
                     clap::arg!([path])
